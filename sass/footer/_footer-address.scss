@@ -1,0 +1,46 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-footer;
+}
+.footer__address {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+
+  text-decoration: none;
+  font-style: normal;
+  color: $head-text-color;
+
+  @include transition(color);
+ 
+  &:hover,
+  &:focus {
+  color: $accent-color;
+}
+}
+
+.footer__link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+
+  text-decoration: none;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address__block {
+  margin-right: 70px;
+}

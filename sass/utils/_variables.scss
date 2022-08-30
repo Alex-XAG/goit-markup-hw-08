@@ -1,0 +1,57 @@
+//   COLORS
+  $primary-text-color: #757575;
+  $title-text-color: #212121;
+  $accent-color: #2196f3;
+  $head-text-color: #ffffff;
+  $primary-bg-color: #ffffff;
+  $background-footer: #2f303a;
+  $background-secondary: #f5f4fa;
+
+//   FONTS
+$font-family-main: "Roboto", sans-serif;
+$font-family-logo: "Raleway", sans-serif;
+$font-weight-title: 700;
+
+// Display-Flex
+
+%d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// BUTTON
+
+%button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+
+  color: $head-text-color;
+  background-color: $accent-color;
+
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  box-shadow: -2px -2px 2px 2px $background-footer,
+  2px 2px 2px 2px $background-footer;
+}
+}
+
+// TRANSITION
+
+@mixin transition ($transform) {
+  transition: $transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}

@@ -1,0 +1,189 @@
+.modal {
+  padding: 40px;
+}
+
+.form__title {  
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.11;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.form__shield {
+  margin-bottom: 10px;
+}
+
+.form__name {
+  display: block;
+  font-family: inherit;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: $primary-text-color;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: $title-text-color;
+}
+
+.form__input {  
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  
+  cursor: pointer;
+
+  @include transition (border-color);
+//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  outline-color: $accent-color;
+  border-color: $accent-color;
+}
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: currentColor;
+
+  @include transition (fill);
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.form__input:hover ~ &,
+.form__input:focus ~ & {
+ fill: $accent-color;  
+}
+}
+
+.form__comment {
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: $primary-text-color;
+}
+
+.comment__text {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: $primary-text-color;
+}
+
+.form__textarea {
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  min-height: 50px;
+  
+  cursor: pointer;
+  outline-color: $accent-color;
+}
+
+textarea::placeholder {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox__label {
+  @extend %d-flex-center;
+  margin-bottom: 30px;
+}
+
+.checkbox__icon {
+  background-image: url(../images/vector-1.svg);
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+
+  @include transition (background-image);
+//   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .checkbox:checked + & {
+  background-image: url(../images/icon-check.svg);
+}
+}
+
+.form__agreement {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: $primary-text-color;
+
+  margin: 0;
+  padding: 0; 
+}
+
+.form-submit__btn {
+  @extend %d-flex-center;
+  min-width: 200px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding: 10px 52px;
+  border-radius: 4px;
+  border-color: transparent;
+    
+  background-color: $accent-color;
+  color: $head-text-color;  
+
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.checkbox__link {
+  font-size: 14px;
+  line-height: 1.71;
+
+  text-decoration-line: underline;
+  color: $accent-color;
+}
