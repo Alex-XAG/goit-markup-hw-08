@@ -1,7 +1,18 @@
 .buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .button__portfolio {
@@ -21,19 +32,25 @@
   cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
- &:hover,
- &:focus {
-  outline: none;
-  color: $head-text-color;
-  background-color: $accent-color;
-  box-shadow: 1px 1px 1px 1px #E5E5E5;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $head-text-color;
+    background-color: $accent-color;
+    box-shadow: 1px 1px 1px 1px #e5e5e5;
+  }
 }
-}
-
 
 .buttons__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.buttons__item {
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }

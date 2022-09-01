@@ -1,33 +1,68 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  margin-right: auto;
-  margin-left: auto;
+  // width: 480px;
+  // height: 400px;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-photo.jpg); // Негрузится фото!!!!
+    url(../images/hero-photos/hero-photo-480.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-photos/hero-photo-768.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 768px;
+    height: 500px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-photos/hero-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   color: $head-text-color;
 
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   margin-top: 0;
   margin-bottom: 30px;
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  // width: 696px;
+  // margin-left: auto;
+  // margin-right: auto;
 }

@@ -1,7 +1,26 @@
-ul, a, p, h1, h2, h3, h4, h5, h6 {
+ul,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+body {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
 }
 
 .page {
@@ -10,20 +29,34 @@ ul, a, p, h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-main;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: 1.71;  
+  line-height: 1.71;
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {

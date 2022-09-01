@@ -4,34 +4,39 @@
   text-align: center;
 
   color: $title-text-color;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .clients__list {
-  display: flex;
+  @extend %d-flex-center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .clients__link {
   @extend %d-flex-center;
   width: 170px;
   height: 92px;
-  color :#AFB1B8;
+  color: #afb1b8;
 
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&:hover,
-&:focus {
-  outline-color: $accent-color;
-  color: $accent-color;
-  fill: $accent-color;
-  border-color: $accent-color;  
+  &:hover,
+  &:focus {
+    outline-color: $accent-color;
+    color: $accent-color;
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
 }
-}
-.clients__icon { 
+.clients__icon {
   @extend %d-flex-center;
   fill: currentColor;
 }
