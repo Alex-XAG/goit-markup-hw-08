@@ -34,6 +34,7 @@
                 </ul>
             </nav>
 
+
             <ul class="contacts-header">
                 <li class="contacts-item">
                     <a href="mailto:info@devstudio.com" class="contacts-header__link">
@@ -50,6 +51,64 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <button type="button" class="mobile-btn__open mobile-btn" data-menu-open>
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+                <div class="mob-navigation">
+                    <button type="button" class="mobile-btn__close mobile-btn" data-menu-close>
+                        <svg width="40" height="40">
+                            <use href="./images/icons.svg#close_40px"></use>
+                        </svg>
+                    </button>
+                    <nav class="mob-site-nav">
+                        <ul class="mob-site-nav__list">
+                            <li class="mob-site-nav__item">
+                                <a href="./index.html" class="mob-site-nav__link mob-current">Студія</a>
+                            </li>
+                            <li class="mob-site-nav__item">
+                                <a href="./porfolio.html" class="mob-site-nav__link">Портфоліо</a>
+                            </li>
+                            <li class="mob-site-nav__item">
+                                <a href="./index.html" class="mob-site-nav__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container">
+                    <ul class="mob-contacts-header">
+                        <li class="mob-contacts-item">
+                            <a href="tel:+380961111111" class="mob-contacts__link-tel">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mob-contacts__link-mail">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-soc__container">
+                    <ul class="mob-soc__list">
+                        <li class="mob-soc__item">
+                            <a href="./" class="mob-soc__link">Instagram</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="./" class="mob-soc__link">Twitter</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="./" class="mob-soc__link">Facebook</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="./" class="mob-soc__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -66,7 +125,7 @@
                 <!--на странице не отображать-->
                 <ul class="advantage__list">
                     <li class="advantage__item item">
-                        <div class="adventage__icon">
+                        <div class="advantage__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#antenna"></use>
                             </svg>
@@ -76,7 +135,7 @@
                             позиції.</p>
                     </li>
                     <li class="advantage__item item">
-                        <div class="adventage__icon">
+                        <div class="advantage__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#clock"></use>
                             </svg>
@@ -86,7 +145,7 @@
                             себе.</p>
                     </li>
                     <li class="advantage__item item">
-                        <div class="adventage__icon">
+                        <div class="advantage__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#diagram"></use>
                             </svg>
@@ -95,7 +154,7 @@
                         <p class="advantage__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="advantage__item item">
-                        <div class="adventage__icon">
+                        <div class="advantage__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#astronaut"></use>
                             </svg>
@@ -365,7 +424,7 @@
                     </ul>
                 </address>
             </div>
-            <div>
+            <div class="footer-soc__block">
                 <h2 class="footer__title">Приєднуйтесь</h2>
                 <ul class="footer-list__icon">
                     <li class="footer-soc__item">
@@ -406,7 +465,11 @@
                     <label class="footer-form__label">
                         <input type="email" class="footer-form__input" placeholder="E-mail">
                     </label>
-                    <button type="submit" class="footer__btn button">Підписатися</button>
+                    <button type="submit" class="footer__btn button">Підписатися
+                        <svg class="footer-btn__icon" width="20" height="20">
+                            <use href="../images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </div>
             </form>
         </div>
@@ -465,6 +528,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

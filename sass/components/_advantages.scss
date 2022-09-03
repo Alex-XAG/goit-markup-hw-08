@@ -1,5 +1,6 @@
 .advantage__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -39,7 +40,7 @@
   color: $primary-text-color;
 }
 
-.adventage__icon {
+.advantage__icon {
   @extend %d-flex-center;
   background-color: $background-secondary;
   margin-bottom: 30px;

@@ -1,10 +1,16 @@
-.footer__container {
-  display: flex;
+.footer-soc__block {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 .footer-list__icon {
   display: flex;
   gap: 10px;
-  align-items: center; 
+  align-items: center;
 }
 .footer__title {
   margin-top: 0;
@@ -25,13 +31,13 @@
   align-items: center;
   justify-content: center;
   fill: $head-text-color;
-  
-  @include transition (background-color);
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include transition(background-color);
+  //   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-  outline: none;
-  background-color: $accent-color;
-}
+    outline: none;
+    background-color: $accent-color;
+  }
 }
