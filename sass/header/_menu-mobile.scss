@@ -3,6 +3,10 @@
   background-color: $primary-bg-color;
   border: none;
   margin-left: auto;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 .is-hidden {
   display: none;
@@ -12,8 +16,7 @@
     display: none;
   }
 }
-.mobile-btn {
-}
+
 .mob-menu {
   position: fixed;
   background-color: $primary-bg-color;
@@ -34,15 +37,7 @@
     display: none;
   }
 }
-.mobile-btn__close {
-  // display: block;
-  // margin-left: auto;
-  // margin-top: 10px;
-}
-.mob-site-nav {
-}
-.mob-site-nav__list {
-}
+
 .mob-site-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -103,8 +98,7 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-.mob-soc__item {
-}
+
 .mob-soc__link {
   font-weight: 500;
   font-size: 18px;

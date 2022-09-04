@@ -293,6 +293,9 @@ img {
   border: none;
   margin-left: auto;
 }
+.mobile-btn:hover, .mobile-btn:focus {
+  fill: #2196f3;
+}
 
 .is-hidden {
   display: none;

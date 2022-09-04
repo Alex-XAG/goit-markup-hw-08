@@ -50,7 +50,64 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <button type="button" class="mobile-btn__open mobile-btn" data-menu-open>
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#menu_40px"></use>
+                </svg>
+            </button>
         </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+                <div class="mob-navigation">
+                    <button type="button" class="mobile-btn__close mobile-btn" data-menu-close>
+                        <svg width="40" height="40">
+                            <use href="./images/icons.svg#close_40px"></use>
+                        </svg>
+                    </button>
+                    <nav class="mob-site-nav">
+                        <ul class="mob-site-nav__list">
+                            <li class="mob-site-nav__item">
+                                <a href="./index.html" class="mob-site-nav__link">Студія</a>
+                            </li>
+                            <li class="mob-site-nav__item">
+                                <a href="./porfolio.html" class="mob-site-nav__link mob-current">Портфоліо</a>
+                            </li>
+                            <li class="mob-site-nav__item">
+                                <a href="./index.html" class="mob-site-nav__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container">
+                    <ul class="mob-contacts-header">
+                        <li class="mob-contacts-item">
+                            <a href="tel:+380961111111" class="mob-contacts__link-tel">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mob-contacts__link-mail">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-soc__container">
+                    <ul class="mob-soc__list">
+                        <li class="mob-soc__item">
+                            <a href="./" class="mob-soc__link">Instagram</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="./" class="mob-soc__link">Twitter</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="./" class="mob-soc__link">Facebook</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="./" class="mob-soc__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </header>
     <main>
         <section class="section">
@@ -66,8 +123,19 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/technokryak.jpg" alt="Фото проекта"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/technokryak-dt.jpg 1x, ./images/portfolio/technokryak-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/technokryak-tab.jpg 1x, ./images/portfolio/technokryak-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/technokryak-mob.jpg 1x, ./images/portfolio/technokryak-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/technokryak-mob.jpg"
+                                        alt="Фото проекта" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -81,8 +149,20 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/posterbasket.jpg" alt="Фото проекта"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/posterbasket-dt.jpg 1x, ./images/portfolio/posterbasket-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/posterbasket-tab.jpg 1x, ./images/portfolio/posterbasket-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/posterbasket-mob.jpg 1x, ./images/portfolio/posterbasket-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/posterbasket-mob.jpg"
+                                        alt="Фото проекта" width="450" height="294">
+                                </picture>
+
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -96,8 +176,20 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/seafood.jpg" alt="Фото проекта"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/seafood-dt.jpg 1x, ./images/portfolio/seafood-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/seafood-tab.jpg 1x, ./images/portfolio/seafood-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/seafood-mob.jpg 1x, ./images/portfolio/seafood-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/seafood-mob.jpg"
+                                        alt="Фото проекта" width="450" height="294">
+                                </picture>
+
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -111,8 +203,20 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/prime.jpg" alt="Фото проекта"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/prime-dt.jpg 1x, ./images/portfolio/prime-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/prime-tab.jpg 1x, ./images/portfolio/prime-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/prime-mob.jpg 1x, ./images/portfolio/prime-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/prime-mob.jpg"
+                                        alt="Фото проекта" width="450" height="294">
+                                </picture>
+
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -126,8 +230,20 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/boxes.jpg" alt="Фото проекта"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/boxes-dt.jpg 1x, ./images/portfolio/boxes-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/boxes-tab.jpg 1x, ./images/portfolio/boxes-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/boxes-mob.jpg 1x, ./images/portfolio/boxes-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/boxes-mob.jpg"
+                                        alt="Фото проекта" width="450" height="294">
+                                </picture>
+
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -141,8 +257,20 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/noborders.jpg" alt="Фото проекта"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/noborders-dt.jpg 1x, ./images/portfolio/noborders-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/noborders-tab.jpg 1x, ./images/portfolio/noborders-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/noborders-mob.jpg 1x, ./images/portfolio/noborders-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/noborders-mob.jpg"
+                                        alt="Фото проекта" width="450" height="294">
+                                </picture>
+
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -156,8 +284,20 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/limitededition.jpg"
-                                    alt="Фото проекта" width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/limitededition-dt.jpg 1x, ./images/portfolio/limitededition-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/limitededition-tab.jpg 1x, ./images/portfolio/limitededition-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/limitededition-mob.jpg 1x, ./images/portfolio/limitededition-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/limitededition-mob.jpg"
+                                        alt="Фото проекта" width="450" height="294">
+                                </picture>
+
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -171,8 +311,20 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/lab.jpg" alt="Фото проекта"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/lab-dt.jpg 1x, ./images/portfolio/lab-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/lab-tab.jpg 1x, ./images/portfolio/lab-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/lab-mob.jpg 1x, ./images/portfolio/lab-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/lab-mob.jpg" alt="Фото проекта"
+                                        width="450" height="294">
+                                </picture>
+
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -186,8 +338,20 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="overlay__block">
-                                <img class="portfolio__img" src="./images/portfolio/business.jpg" alt="Фото проекта"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/business-dt.jpg 1x, ./images/portfolio/business-dt-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/business-tab.jpg 1x, ./images/portfolio/business-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/business-mob.jpg 1x, ./images/portfolio/business-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="portfolio__img" src="./images/portfolio/business-mob.jpg"
+                                        alt="Фото проекта" width="450" height="294">
+                                </picture>
+
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -272,6 +436,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

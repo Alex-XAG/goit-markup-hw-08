@@ -175,21 +175,24 @@
                         <div class="service__block">
                             <h3 class="service__titles">Десктопні додатки</h3>
                         </div>
-                        <img src="./images/photocoding.jpg" class="service__img"
+                        <img srcset="./images/services/photocoding.jpg 1x, ./images/services/photocoding-2x.jpg 2x"
+                            src="./images/services/photocoding.jpg" class="service__img"
                             alt="Разработка сайтов/программирование" width="370" height="291">
                     </li>
                     <li class="service__item">
                         <div class="service__block">
                             <h3 class="service__titles">Мобільні додатки</h3>
                         </div>
-                        <img src="./images/mobileapps.jpg" class="service__img" alt="Разработка мобильных приложений"
-                            width="370" height="291">
+                        <img srcset="./images/services/mobileapps.jpg 1x, ./images/services/mobileapps-2x.jpg 2x"
+                            src="./images/services/mobileapps.jpg" class="service__img"
+                            alt="Разработка мобильных приложений" width="370" height="291">
                     </li>
                     <li class="service__item">
                         <div class="service__block">
                             <h3 class="service__titles">Дизайнерські рішення</h3>
                         </div>
-                        <img src="./images/design.jpg" class="service__img" alt="Дизайн страницы" width="370"
+                        <img srcset="./images/services/design.jpg 1x, ./images/services/design-2x.jpg 2x"
+                            src="./images/services/design.jpg" class="service__img" alt="Дизайн страницы" width="370"
                             height="291">
                     </li>
                 </ul>
@@ -201,8 +204,20 @@
 
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/photopd.jpg" alt="Фото сотрудника" width="270"
-                            height="260">
+                        <picture>
+                            <source
+                                srcset="./images/teamphoto/photopd-dt.jpg 1x, ./images/teamphoto/photopd-dt-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/teamphoto/photopd-tab.jpg 1x, ./images/teamphoto/photopd-tab-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/teamphoto/photopd-mob.jpg 1x, ./images/teamphoto/photopd-mob-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img class="team__img" src="./images/teamphoto/photopd-mob.jpg" alt="Фото сотрудника"
+                                width="450" height="460">
+                        </picture>
+
                         <div class="team__blok">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p lang="en" class="team__text">Product Designer</p>
@@ -239,8 +254,20 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photofd.jpg" alt="Фото сотрудницы" width="270"
-                            height="260">
+                        <picture>
+                            <source
+                                srcset="./images/teamphoto/photofd-dt.jpg 1x, ./images/teamphoto/photofd-dt-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/teamphoto/photofd-tab.jpg 1x, ./images/teamphoto/photofd-tab-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/teamphoto/photofd-mob.jpg 1x, ./images/teamphoto/photofd-mob-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img class="team__img" src="./images/teamphoto/photofd-mob.jpg" alt="Фото сотрудницы"
+                                width="450" height="460">
+                        </picture>
+
                         <div class="team__blok">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p lang="en" class="team__text">Frontend Developer</p>
@@ -277,7 +304,19 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photom.jpg" alt="Фото сотрудника" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/teamphoto/photom-dt.jpg 1x, ./images/teamphoto/photom-dt-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/teamphoto/photom-tab.jpg 1x, ./images/teamphoto/photom-tab-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/teamphoto/photom-mob.jpg 1x, ./images/teamphoto/photom-mob-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img class="team__img" src="./images/teamphoto/photom-mob.jpg" alt="Фото сотрудника"
+                                width="450" height="460">
+                        </picture>
+
                         <div class="team__blok">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p lang="en" class="team__text">Marketing</p>
@@ -314,8 +353,20 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photouid.jpg" alt="Фото сотрудника" width="270"
-                            height="260">
+                        <picture>
+                            <source
+                                srcset="./images/teamphoto/photouid-dt.jpg 1x, ./images/teamphoto/photouid-dt-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/teamphoto/photouid-tab.jpg 1x, ./images/teamphoto/photouid-tab-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/teamphoto/photouid-mob.jpg 1x, ./images/teamphoto/photouid-mob-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img class="team__img" src="./images/teamphoto/photouid-mob.jpg" alt="Фото сотрудника"
+                                width="450" height="460">
+                        </picture>
+
                         <div class="team__blok">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p lang="en" class="team__text">UI Designer</p>
