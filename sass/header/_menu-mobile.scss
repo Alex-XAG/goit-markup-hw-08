@@ -21,7 +21,7 @@
 .mobile-btn__close {
   position: absolute;
   top: 15px;
-  right: 25px;
+  right: 3%;
 }
 
 .mob-menu {
@@ -32,8 +32,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 48px 40px;
+  padding-right: 10px;
   > .container {
     height: 100%;
     display: flex;
@@ -82,7 +82,7 @@
   text-decoration: none;
 
   @media screen and (max-width: 400px) {
-    font-size: 28px;
+    font-size: 27px;
   }
 }
 .mob-contacts__link-mail {
@@ -111,4 +111,15 @@
 
   color: $accent-color;
   text-decoration: none;
+}
+.mob-soc__item {
+  position: relative;
+}
+.mob-soc__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  margin-left: 10px;
+  height: 22px;
+  width: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
 }
