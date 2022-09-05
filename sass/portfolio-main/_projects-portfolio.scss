@@ -42,11 +42,7 @@
 }
 
 .portfolio__item {
-  border-left: 1px solid rgba(238, 238, 238, 1);
-  border-right: 1px solid rgba(238, 238, 238, 1);
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-top: none;
-  width: calc(100% - 30px);
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
@@ -57,7 +53,11 @@
 }
 
 .portfolio__sign {
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
   padding: 20px 24px;
+  height: 100%;
 }
 .portfolio__img {
   display: block;

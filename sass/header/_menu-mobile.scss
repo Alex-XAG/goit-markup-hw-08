@@ -3,6 +3,8 @@
   background-color: $primary-bg-color;
   border: none;
   margin-left: auto;
+  position: absolute;
+  right: 0;
   &:hover,
   &:focus {
     fill: $accent-color;
@@ -16,6 +18,11 @@
     display: none;
   }
 }
+.mobile-btn__close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
 
 .mob-menu {
   position: fixed;
@@ -25,17 +32,21 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 10px;
+  padding-top: 48px;
   padding-bottom: 48px;
   > .container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
   }
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.mob-navigation {
+  margin-bottom: auto;
 }
 
 .mob-site-nav__item:not(:last-child) {
