@@ -15,11 +15,11 @@
   &:focus {
     box-shadow: 1px 3px 3px 1px rgba(117, 117, 117, 0.5);
   }
-  @media screen and (min-width: 480px) {
-    width: 270px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    width: calc((100% - 120px) / 4);
   }
 }
 
